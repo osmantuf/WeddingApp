@@ -1,5 +1,7 @@
 <template>
-        <h1>${message}</h1>
-         <compose show.bind="showUserEditForm" view="./components/editUser.html"></compose>
-         <compose show.bind="!showUserEditForm" view="./components/tableUsers.html"></compose>
+    <div class="text-center container" style="margin-top:20px;">
+            <h1>${message}</h1>
+    </div>
+     <compose show.bind="showUserEditForm" view="./components/editUser.html"></compose>
+     <compose show.bind="!showUserEditForm" view="./components/tableUsers.html"></compose>
 </template>

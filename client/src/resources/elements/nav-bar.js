@@ -39,6 +39,7 @@ export class NavBar {
         sessionStorage.removeItem('user');
         this.isAuthenticated = this.auth.isAuthenticated();
         this.auth.logout();
+        this.router.navigate('home');
     }
     bind() {
         this.isAuthenticated = this.auth.isAuthenticated();
