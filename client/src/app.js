@@ -24,6 +24,12 @@ export class App {
         moduleId: './modules/users',
         name: ' Users',
         auth:true
+      },
+      {
+        route: 'todos',
+        moduleId: './modules/todos',
+        name: 'Todo',
+        auth:true
       }
     ]);
   }
