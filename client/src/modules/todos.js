@@ -8,7 +8,7 @@ export class Todos {
   constructor(router, todos) {
     this.router = router;
     this.todos = todos;
-    this.message = 'Todos';
+    this.message = 'Todos List';
     this.showTodoEditForm = false;
   }
 

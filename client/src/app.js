@@ -30,6 +30,12 @@ export class App {
         moduleId: './modules/todos',
         name: 'Todo',
         auth:true
+      },
+      {
+        route: 'guests',
+        moduleId: './modules/guests',
+        name: 'Guests',
+        auth:true
       }
     ]);
   }

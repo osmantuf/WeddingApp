@@ -1,0 +1,63 @@
+<template>
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-8">
+              <table class="table">
+      
+                <thead>
+                  <tr>
+                    <th colspan="4">
+                      <span click.trigger="newGuest()"><i data-feather="plus"></i></span>
+                      <span click.trigger="getGuests()" style="margin-left:5px;"><i data-feather="refresh-cw"></i></span>
+                    </th>
+      
+                  </tr>
+      
+      
+                  <tr>
+      
+                    <th scope="col">Guest Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Number of Invitees</th>
+                    <th scope="col">RSPV</th>
+      
+                  </tr>
+      
+                </thead>
+      
+                <tbody>
+      
+                  <tr repeat.for="guest of guests.guestsArray">
+      
+                    <td click.trigger="editGuest(guest)">${guest.firstName} ${guest.lastName}</td>
+                    <td click.trigger="editGuest(guest)">${guest.email}</td>
+                    <td click.trigger="editGuest(guest)">${guest.numberOfPeople}</td>
+      
+                    <td>
+      
+                      <div class="form-check">
+      
+                        <input class="form-check-input" change.delegate="changeActive(todo)" checked.bind="guest.rspv" type="checkbox"
+                          value="" id="defaultCheck1">
+                      </div>
+      
+      
+      
+                    </td>
+      
+                  </tr>
+      
+      
+      
+                </tbody>
+      
+              </table>
+      
+            </div>
+      
+          </div>
+      
+        </div>
+      
+      </template>

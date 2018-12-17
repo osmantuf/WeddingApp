@@ -1,0 +1,9 @@
+<template>
+        <div class="container">
+                <div class="text-center container" style="margin-top:20px;">
+                        <h1>${message}</h1>
+                </div>
+            <compose show.bind="showGuestEditForm" view="./components/editGuest.html"></compose>
+            <compose show.bind="!showGuestEditForm" view="./components/tableGuests.html"></compose>
+        </div> 
+    </template>
